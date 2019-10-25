@@ -14,7 +14,8 @@
 using namespace cimg_library;
 
 //Function that returns the starting coordinates and dimensions of the user selected area
-std::vector<int> getArea(Display* display,Cursor cursor,Window root) {
+std::vector<int> getArea(Display* display,Window root) {
+    Cursor currCursor = XCreateCursor(display, XC_lr_angle)
     XGCValues gcValues;
     int areaX = 0,areaY = 0,areaWidth = 0,areaHeight = 0;
     int rectX = 0,rectY = 0, rectWidth = 0, rectHeight = 0;
