@@ -1,7 +1,11 @@
 #!/bin/bash
 #Get random filename
+$Directory = "~/imageStore/"
 fn=$(cat /dev/urandom | tr -cd 'a-f0-9' | head -c 32)
-image='/home/v0idx/Pictures/imageStore/'"$fn"'.png'
+if [-d $Directory]; then 
+  mkdir $Directory
+fi
+image="${Directory} ${fn}.png"
 
 #Execute screenshot functionality
 ./main "$image"
