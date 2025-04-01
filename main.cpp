@@ -1,5 +1,5 @@
 //X11 Screenshot Utility
-//Elliott Nash - v0idx.com
+//Elle Nash - v0idx.com
 //Compile with g++ -o main main.cpp -O2 -L/usr/X11R6/lib -m -lpthread -lX11
 //Place screenExec.sh in /usr/local/bin for easy exec.
 
